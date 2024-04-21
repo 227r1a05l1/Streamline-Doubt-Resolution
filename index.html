@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="favicon/query.png" type="image/png">
+
+    <title>Streamline-Doubt-Resolution</title>
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://thumbs.dreamstime.com/b/lms-learning-management-system-hand-pressing-button-technology-screen-288017012.jpg');
+            background-size: cover; /* Ensure the image covers the entire background */
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 136px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 29px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            color:black
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+        
+        footer {
+            position: fixed;
+            bottom: -100px; /* Initially set it below the viewport */
+            width: 100%;
+            visibility: hidden; /* Hide the footer by default */
+            transition: visibility 0s, bottom 0.5s; /* Smooth transition for visibility and position */
+            z-index: 999; /* Ensure the footer appears above other content */
+        }
+
+        .show-footer {
+            bottom: 0; /* Bring the footer into view */
+            visibility: visible; /* Make the footer visible */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://img.freepik.com/free-photo/concept-back-school-teacher-s-day-idea-pens-pencils-books-alarm-clock-table-against-background-gray-board-with-copy-space_166373-2803.jpg" alt="contact-form">
+            <div style="color:black">Streamline-Doubt-Resolution</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <!-- <li><a href="#">About Us</a></li> -->
+                <!-- <li><a href="#">Doubt Form</a></li>
+                <li><a href="#">Contact Us</a></li> -->
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+<div class="right">
+    <a href="tel:+919121700886" class="btn">Call Us Now</a>
+    <a href="mailto:9121sameer@gmail.com" class="btn">Email Us</a>
+</div>
+
+    </header>
+    <div class="container">
+        <h1>Submit your Doubts</h1>
+        <form action="https://script.google.com/macros/s/AKfycbw0YlneQ22rjLV7kDTo_ZTlErgm5YldxyFT00kCge2KCrspta2Ifokzeq-jArwk_VN3-w/exec" method="post" enctype="application/json">
+            <div class="form-group">
+                <input type="text" name="student_name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="student_branch" placeholder="Enter your Branch">
+            </div>
+            <div class="form-group">
+                <input type="text" name="student_roll_number" placeholder="Enter your Roll Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="student_address" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <textarea name="student_doubt" placeholder="Enter your Doubt"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="text" name="student_email" placeholder="Enter your Email Id">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        
+    </div>
+     <footer class="bg-dark text-light text-center py-4" id="footer">
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Me</h5>
+                    <p>Passionate about empowering educational institutions, I specialize in creating dynamic platforms like Student Doubt Hub websites. With expertise in integrating seamless doubt submission forms and robust backend systems. </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Me</h5>
+                    <p>Email: <a href="mailto:9121sameer@gmail.com">codersdive@skillBuilder.com</a></p>
+                    <p>Phone: +91 9121700886</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/shaiksameer.hussain.12?mibextid=ZbWKwL" target="_blank"class="btn btn-primary btn-social"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shaik-sameer-hussain-b88323250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank" class="btn btn-social btn-linkedin"><i class="bi bi-linkedin"></i></a>   
+                    <a href="https://www.instagram.com/h_shaiksameer?igsh=MXZhZDRoY2NsMHU5bw=="target="_blank" class="btn btn-danger btn-social"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        
+    </footer> 
+
+    <script>
+        // Function to show/hide footer based on scrolling
+        function toggleFooter() {
+            var footer = document.getElementById('footer');
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                footer.classList.add('show-footer');
+            } else {
+                footer.classList.remove('show-footer');
+            }
+        }
+
+        // Add scroll event listener to toggle footer visibility
+        window.addEventListener('scroll', toggleFooter);
+    </script>
+</body>
+
+</html>
