@@ -30,10 +30,10 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Sameerq7/Streamline-Doubt-Resolution.git
-cd Streamline-Doubt-Resolution
+    git clone https://github.com/Sameerq7/Streamline-Doubt-Resolution.git
+    cd Streamline-Doubt-Resolution
 
-2. Set Up Google Apps Script
+### 2. Set Up Google Apps Script
 Go to Google Sheets and create a new spreadsheet.
 Open the Apps Script editor from Extensions > Apps Script.
 Add the provided Apps Script code for data submission into Google Sheets.
