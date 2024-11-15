@@ -32,48 +32,46 @@
 ```bash
 git clone https://github.com/Sameerq7/Streamline-Doubt-Resolution.git
 cd Streamline-Doubt-Resolution
-
-### 2. Set Up Google Apps Script
+2. Set Up Google Apps Script
 Go to Google Sheets and create a new spreadsheet.
 Open the Apps Script editor from Extensions > Apps Script.
 Add the provided Apps Script code for data submission into Google Sheets.
-
-### 3. Set Up the Frontend
+3. Set Up the Frontend
 The frontend is simple HTML, CSS, and JavaScript files that interact with Google Sheets through the Apps Script API.
-
-### 4. Docker Setup (Optional)
+4. Docker Setup (Optional)
 If you want to run the application locally with Docker:
 
 Create a Dockerfile in the root directory:
-```bash
+dockerfile
+Copy code
 FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
-
 Build and run the Docker container:
-```bash
+bash
+Copy code
 docker build -t streamline-doubt-resolution .
 docker run -d -p 8080:80 streamline-doubt-resolution
-
 5. Deploy to Netlify
 Link your project to GitHub and deploy to Netlify.
 Follow the Netlify instructions to connect to your Git repository and trigger a deploy.
 Access the live site via the URL provided by Netlify.
-
 Deployment
 The application is deployed on Netlify:
-Netlify Site URL: https://doubtresolvebykrishna.netlify.app
 
+Netlify Site URL: https://doubtresolvebykrishna.netlify.app
 Contribution
 Fork the repository.
 Create a new branch for your feature (git checkout -b feature-name).
 Commit your changes (git commit -am 'Add feature').
 Push to the branch (git push origin feature-name).
 Create a new Pull Request.
-
 License
 This project is licensed under the MIT License.
 
-Now you can easily copy this entire block into your `README.md` file with the correct markdown formatting.
+less
+Copy code
+
+This markdown should now be correctly formatted in a way that when copied into a `README.md` file, it will work properly and render the markdown formatting.
 
 
 
