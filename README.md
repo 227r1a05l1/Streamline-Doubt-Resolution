@@ -75,10 +75,6 @@ Create a new Pull Request.
 License
 This project is licensed under the MIT License.
 
-less
-Copy code
-
-This markdown should now be correctly formatted in a way that when copied into a `README.md` file, it will work properly and render the markdown formatting.
 
 
 
